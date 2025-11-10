@@ -3,6 +3,11 @@
   padding-bottom: 64px;
 }
 
+.maxWidthWrapper  {
+  position: relative;
+  z-index: 1;
+}
+
 .header {
   padding-bottom: 64px;
   width: 65%;
