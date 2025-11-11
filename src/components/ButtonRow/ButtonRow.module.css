@@ -1,2 +1,5 @@
-.buttonRow {
+@media (max-width: 768px) {
+  .buttonRow {
+    width: fit-content;
+  }
 }
