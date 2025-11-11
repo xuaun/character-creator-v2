@@ -19,6 +19,8 @@
   margin: 0;
   /* Optical centering */
   margin-bottom: -4px;
+  position: sticky;
+  left: 0px;
 }
 
 .metadata {
@@ -32,10 +34,5 @@
   .controlPane {
     max-width: 512px;
     min-width: 80vw;
-  }
-
-  .title {
-    position: sticky;
-    left: 0px;
   }
 }
