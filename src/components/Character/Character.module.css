@@ -5,3 +5,10 @@
   left: 100%;
   transform: translateX(-100%);
 }
+
+@media (max-width: 768px) {
+  .character {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -3,7 +3,7 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper  {
+.maxWidthWrapper {
   position: relative;
   z-index: 1;
 }
@@ -34,7 +34,7 @@
   margin: 0 auto;
   min-height: 500px;
   height: calc(100% - 160px);
-  width: 1024px;
+  max-width: 1024px;
 }
 
 .controlColumn {
@@ -49,4 +49,40 @@
   height: 40%;
   background: hsl(195deg, 20%, 86%);
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .characterEditor {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  .characterWrapper {
+    position: relative;
+    top: -16px;
+    min-height: 400px;
+    height: 60vh;
+  }
+
+  .header {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .controlColumn {
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    bottom: max(-420px, -75vh);
+  }
 }
