@@ -55,6 +55,7 @@
   .characterEditor {
     padding-top: 40px;
     padding-bottom: 32px;
+    overflow-x: hidden;
   }
 
   .characterWrapper {
@@ -84,5 +85,11 @@
     flex-direction: row;
     gap: 16px;
     bottom: max(-420px, -75vh);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
   }
 }
