@@ -79,14 +79,15 @@
   }
 
   .controlColumn {
-    width: fit-content;
+    width: 100%;
+    padding-right: 64px;
     position: absolute;
     display: flex;
     flex-direction: row;
     gap: 16px;
     bottom: max(-420px, -75vh);
     overflow-x: scroll;
-    overflow-y: hidden;
+
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x;
     overscroll-behavior: contain;
