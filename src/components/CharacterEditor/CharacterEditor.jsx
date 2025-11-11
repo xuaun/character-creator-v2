@@ -82,6 +82,23 @@ function App() {
       </MaxWidthWrapper>
 
       <div className={styles.characterWrapper}>
+        <span className="visually-hidden">
+          Character preview: {bodyOptions[body].labelText}, has a{" "}
+          {headOptions[head].labelText}, is{" "}
+          {faceOptions[face].labelText},{" "}
+          {accessoryOptions[accessory].labelText}, has{" "}
+          {
+            skinColorOptions.find((option) => option.id === skinColor)
+              .labelText
+          }{" "}
+          skin color, and is using{" "}
+          {
+            clothesColorOptions.find(
+              (option) => option.id === clothesColor
+            ).labelText
+          }{" "}
+          clothes.
+        </span>
         <Character
           body={body}
           head={head}
